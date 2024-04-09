@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="veterinaria.Master.cs" Inherits="Veterinaria.Site1" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="CSS/CssMenu.css" rel="stylesheet" />
+    <%--<link href="CSS/Login.css" rel="stylesheet" />--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <ul>
+                <li><a class="active" href="Inicio.aspx">INICIO</a></li>
+                <li><a href="ReporteUsuarios.aspx">Reporte de Usuarios</a></li>
+                <li><a href="ReporteMascotas.aspx">Reporte de Mascotas</a></li>
+                <li><a href="ReporteControlCitas.aspx">Reporte de Control de Citas</a></li>
+            </ul>
+        </div>
+        <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                test
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
